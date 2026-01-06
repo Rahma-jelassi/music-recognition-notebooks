@@ -159,4 +159,56 @@ Frontend web application: \[music-recognition-frontend](https://github.com/Rahma
 
 
 MIT License
+## Configuration
 
+After cloning the repository, you need to configure paths in the notebooks:
+
+### For Notebook 2: Extract Embeddings
+
+Open `2_extract_embeddings.ipynb` and update these paths:
+
+```python
+# Audio files location (from downloads)
+AUDIO_FOLDER = r"C:\Users\Rahmaa\Desktop\deep learning\downloadSongs\audio_dataset_1000"
+
+# Where to save embeddings
+OUTPUT_DIR = r"C:\Users\Rahmaa\Desktop\deep learning\audio_embeddings_database"
+```
+
+**Change to YOUR paths:**
+```python
+AUDIO_FOLDER = r"C:\YOUR\PATH\TO\audio_dataset_1000"
+OUTPUT_DIR = r"C:\YOUR\PATH\TO\audio_embeddings_database"
+```
+
+### For Notebook 3: Recognition
+
+Open `3_recognition_realtime.ipynb` and update:
+
+```python
+# Device for audio capture
+DEVICE_INDEX = 1  # Find yours with: sd.query_devices()
+
+# Database location
+DATABASE_DIR = r"C:\YOUR\PATH\TO\audio_embeddings_database"
+```
+
+### For Script: Download Songs
+
+Open `scripts/downloadSongs.py` and update:
+
+```python
+OUTPUT_DIR = r"C:\YOUR\PATH\TO\audio_dataset_1000"
+```
+
+### Quick Setup Example
+
+```python
+# Example configuration for Windows
+AUDIO_FOLDER = r"C:\Users\YourName\Music\audio_dataset"
+OUTPUT_DIR = r"C:\Users\YourName\Music\embeddings"
+
+# Example for Mac/Linux
+AUDIO_FOLDER = "/home/yourname/music/audio_dataset"
+OUTPUT_DIR = "/home/yourname/music/embeddings"
+```
