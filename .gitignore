@@ -1,0 +1,56 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Audio Files (TOO LARGE - DO NOT UPLOAD!)
+downloadSongs/
+audio_dataset_*/
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.ogg
+*.webm
+*.opus
+
+# Database Files (TOO LARGE - DO NOT UPLOAD!)
+yamnet_database/
+audio_embeddings_database/
+embeddings_database/
+*.npy
+*.pkl
+
+# Temporary Files
+temp/
+tmp/
+query_*.wav
+embeddings_temp_*.npy
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Model Cache
+.cache/
+models/

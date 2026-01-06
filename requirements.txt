@@ -1,0 +1,12 @@
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.7.2
+librosa==0.11.0
+soundfile==0.13.1
+audioread>=3.0.0
+tensorflow==2.20.0
+tensorflow-hub==0.16.1
+yt-dlp>=2023.3.4
+jupyter>=1.0.0
+ipykernel>=6.25.0
+tqdm>=4.65.0
